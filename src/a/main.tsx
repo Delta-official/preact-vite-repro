@@ -4,8 +4,8 @@ import { render } from "preact-render-to-string";
 export class Page extends Component {
     override render(): ComponentChildren {
         return <>
-            <span>hello</span>
-            <span>hi</span>
+            <span>hello from a</span>
+            <span>hi from a</span>
         </>
     }
 }

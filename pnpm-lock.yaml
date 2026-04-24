@@ -4,6 +4,9 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  vite-prerender-plugin: github:preactjs/vite-prerender-plugin#fix-alternative-index-html
+
 importers:
 
   .:
@@ -21,9 +24,6 @@ importers:
       '@tsconfig/recommended':
         specifier: ^1.0.13
         version: 1.0.13
-      baseline-browser-mapping:
-        specifier: 2.10.18
-        version: 2.10.18
       glob:
         specifier: ^13.0.6
         version: 13.0.6
@@ -597,8 +597,9 @@ packages:
     peerDependencies:
       browserslist: '>= 4.21.0'
 
-  vite-prerender-plugin@0.5.13:
-    resolution: {integrity: sha512-IKSpYkzDBsKAxa05naRbj7GvNVMSdww/Z/E89oO3xndz+gWnOBOKOAbEXv7qDhktY/j3vHgJmoV1pPzqU2tx9g==}
+  vite-prerender-plugin@https://codeload.github.com/preactjs/vite-prerender-plugin/tar.gz/e22ac1a236154b6c810f4d69c142afa4e8df50cc:
+    resolution: {tarball: https://codeload.github.com/preactjs/vite-prerender-plugin/tar.gz/e22ac1a236154b6c810f4d69c142afa4e8df50cc}
+    version: 0.5.13
     peerDependencies:
       vite: 5.x || 6.x || 7.x || 8.x
 
@@ -838,7 +839,7 @@ snapshots:
       magic-string: 0.30.21
       picocolors: 1.1.1
       vite: 8.0.8
-      vite-prerender-plugin: 0.5.13(vite@8.0.8)
+      vite-prerender-plugin: https://codeload.github.com/preactjs/vite-prerender-plugin/tar.gz/e22ac1a236154b6c810f4d69c142afa4e8df50cc(vite@8.0.8)
       zimmerframe: 1.1.4
     transitivePeerDependencies:
       - preact
@@ -1179,7 +1180,7 @@ snapshots:
       escalade: 3.2.0
       picocolors: 1.1.1
 
-  vite-prerender-plugin@0.5.13(vite@8.0.8):
+  vite-prerender-plugin@https://codeload.github.com/preactjs/vite-prerender-plugin/tar.gz/e22ac1a236154b6c810f4d69c142afa4e8df50cc(vite@8.0.8):
     dependencies:
       kolorist: 1.8.0
       magic-string: 0.30.21
